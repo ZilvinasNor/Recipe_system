@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Puslapio pavadinimas</title>
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+<h3 class="slogan">Receptų svetainė</h3>
+<div class="topMenu">
+    <ul>
+        <li><a href="{{ path('home') }}">Pagrindinis</a></li>
+        <li><a href="{{ path('top') }}">Top10</a></li>
+        <li><a href="{{ path('blynai') }}">Blynai</a></li>
+        <li><a href="{{ path('kepsniai') }}">Kepsniai</a></li>
+        <li><a href="{{ path('gerimai') }}">Gėrimai</a></li>
+        <li><a href="{{ path('konditerija') }}">Konditerija</a></li>
+        <li><a href="{{ path('kontaktai') }}">Kontaktai</a></li>
+    </ul>
+</div>
+<div class="pageContent">
+    {% block content %} {% endblock %}
+</div>
+Žilvinas Norinkevičius IFB-6
+<br />
+KTU, 2019
+</body>
+</html>
